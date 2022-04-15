@@ -1,0 +1,6 @@
+# Para encontrar o -export-dir do banco de dados, usar o seguinte comando:
+describe formatted work_dataeng.pokemon_guilherme
+
+# Export de dados para a nova tabela. 
+# (OBS.: Deve-se especificar pelo menos: --connect --export-dir --table)
+sqoop export --connect <> -–export-dir hdfs://bigdataclu-ns/user/hive/warehouse/work_dataeng.db/pokemon_guilherme --columns idnum,name,hp,speed --table export_pokemon
